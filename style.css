@@ -49,17 +49,67 @@ section {
   margin: 0 auto;
 }
 
+.quote-wrapper {
+  padding: 0.8rem;
+  padding-left: 0.35rem;
+  margin: 1.5rem 0;
+  border-radius: 0.3rem;  
+}
+
+.quote-wrapper.bg-red {
+  background-color: rgb(255, 0, 0, 0.2);
+  color: rgb(100, 0, 0);
+}
+
+.quote-wrapper.bg-green {
+  background-color: rgb(0, 255, 0, 0.2);
+  color: rgb(0, 100, 0);
+}
+
+.quote-wrapper.bg-blue {
+  background-color: rgb(0, 0, 255, 0.2);
+  color: rgb(0, 0, 100);
+}
+
+blockquote {
+  position: relative;
+  margin: 0 0 0 4.7rem;
+}
+
+blockquote::before {
+  content: "\201C";
+  display: block;
+  position: absolute;
+  top: -2rem;
+  left: -4.4rem;
+  font-size: 12rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+blockquote cite {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+blockquote cite:before {
+  content: "\2014 \2009";
+}
+
 
 table {
-  background-color: black;
+  background-color: #ffe066;
 }
 
 th, td {
-  padding: 0.5rem;
+  padding: 1rem 0.5rem;
   text-align: center;
-  background-color: white;
+  background-color: #fff5cc;
 }
 
+th {
+  background-color: #ffd11a;
+}
 
 
 footer {
