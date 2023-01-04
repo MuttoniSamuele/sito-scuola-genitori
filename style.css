@@ -50,6 +50,18 @@ section {
 }
 
 
+table {
+  background-color: black;
+}
+
+th, td {
+  padding: 0.5rem;
+  text-align: center;
+  background-color: white;
+}
+
+
+
 footer {
   width: 100%;
   background-color: #b3b3b3;
