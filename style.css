@@ -11,7 +11,7 @@ body {
 
 header, main {
   margin: 0 auto;
-  max-width: 55%;
+  width: 55%;
 }
 
 
@@ -46,8 +46,14 @@ main {
 }
 
 section {
-  margin: 0 auto;
+  margin: 0 auto 3rem auto;
 }
+
+section h3 {
+  margin-top: 2rem;
+  font-size: 1.6rem;
+}
+
 
 .quote-wrapper {
   padding: 0.8rem;
@@ -97,8 +103,14 @@ blockquote cite:before {
 }
 
 
+.table-wrapper {
+  width: 100%;
+  overflow-y: auto;
+}
+
 table {
   background-color: #ffe066;
+  width: 100%;
 }
 
 th, td {
@@ -133,4 +145,65 @@ footer a, footer a:hover, footer a:visited {
 
 footer a:hover {
   text-decoration: underline;
+}
+
+
+@media screen and (max-width: 1500px) {
+  header, main {
+    margin: 0 auto;
+    width: 65%;
+  }
+
+  header h1 {
+    font-size: 3.8vw;
+  }
+}
+
+
+@media screen and (max-width: 1100px) {
+  header, main {
+    margin: 0 auto;
+    width: 95%;
+  }
+  
+  header h1 {
+    font-size: 5.5vw;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    font-size: 1rem;
+  }
+
+  section {
+    margin-bottom: 2.2rem;
+  }
+
+  section h3 {
+    font-size: 1.3rem;
+  }
+
+  blockquote {
+    margin: 0 0 0 3.5rem;
+  }
+  
+  blockquote::before {
+    top: -1.6rem;
+    left: -3.6rem;
+    font-size: 10rem;
+  }
+  
+  blockquote cite {
+    font-size: 0.85rem;
+  }
+
+  th, td {
+    padding: 0.5rem 0.3rem;
+  }
+
+  footer {
+    font-size: 0.8rem;
+    padding: 0.75rem 0;
+  }
 }
